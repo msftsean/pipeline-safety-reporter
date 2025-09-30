@@ -15,8 +15,8 @@ import healthRouter from './routes/health';
 // Load environment variables
 dotenv.config();
 
-// Validate required environment variables
-validateEnvironment();
+// Validate required environment variables (skip database for demo)
+// validateEnvironment();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
